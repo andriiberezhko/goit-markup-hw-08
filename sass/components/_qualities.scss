@@ -1,0 +1,41 @@
+.qualities {
+  padding-bottom: 0;
+}
+
+.qualities__list {
+  display: flex;
+}
+
+.qualities__items {
+  flex-basis: calc(100% / 4);
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.qualities__title {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.qualities__text {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.786;
+  letter-spacing: 0.032em;
+  color: $textColor;
+}
+.qualities__svg {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f5f4fa;
+}
+.qualities__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

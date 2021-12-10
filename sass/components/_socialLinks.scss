@@ -1,0 +1,54 @@
+.social-networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  padding-bottom: 30px;
+}
+.social-networks__link {
+  display: block;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  text-align: center;
+  color: #afb1b8;
+
+  transition: background-color $time $timeFunction, color $time $timeFunction;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $linkNavHover;
+    color: white;
+  }
+}
+.social-networks__items {
+  display: block;
+}
+
+.social-networks__items:not(:first-child) {
+  margin-left: 10px;
+}
+.social-networks__icon {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  fill: currentColor;
+}
+.social-networks__link--inverse {
+  display: block;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  text-align: center;
+  color: #ffffff;
+  background-color: #ffffff1a;
+
+  transition: background-color $time $timeFunction, color $time $timeFunction;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $linkNavHover;
+  }
+}

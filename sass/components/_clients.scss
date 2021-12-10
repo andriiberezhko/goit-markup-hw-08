@@ -1,0 +1,46 @@
+.clients {
+  text-align: center;
+  background-color: $backgroundColorMain;
+}
+.clients__title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.clients__list {
+  display: flex;
+}
+.clients__items {
+  height: 92px;
+  display: block;
+  flex-basis: calc(100% / 6);
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.clients__link {
+  display: block;
+  color: #afb1b8;
+  outline: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  transition: color $time $timeFunction, outline $time $timeFunction;
+
+  &:hover,
+  &:focus {
+    color: $linkNavHover;
+    outline: 1px solid $linkNavHover;
+  }
+}
+.clients__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  fill: currentColor;
+}
