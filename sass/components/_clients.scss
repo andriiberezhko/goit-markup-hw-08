@@ -11,13 +11,20 @@
 }
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 .clients__items {
-  height: 92px;
   display: block;
-  flex-basis: calc(100% / 6);
-  &:not(:first-child) {
-    margin-left: 30px;
+  flex-basis: calc(100% / 2 - 30px);
+  margin: 15px;
+  @media (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
+  @media (min-width: 1199px) {
+    flex-wrap: nowrap;
+    flex-basis: calc(100% / 6 - 30px);
   }
 }
 

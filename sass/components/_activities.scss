@@ -1,3 +1,9 @@
+.activities {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .activities__title {
   text-align: center;
   margin-bottom: 50px;

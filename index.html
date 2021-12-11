@@ -21,17 +21,17 @@
     <!--Шапка-->
 
     <header class="header">
-
+    
         <div class="container header__container">
+            <a href="#" class="logo "> <span>Web</span>Studio</a>
+    
+    
             <nav class="nav">
-                <a href="#" class="logo "> <span>Web</span>Studio</a>
-
-
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="./index.html" class="nav__link curent">Студия</a>
                     </li>
-                    <li class="header__item">
+                    <li class="nav__item">
                         <a href="./portfolio.html" class="nav__link">Портфолио</a>
                     </li>
                     <li class="nav__item">
@@ -39,11 +39,11 @@
                     </li>
                 </ul>
             </nav>
-
+    
             <ul class="header__contacts contacts">
                 <li class="header__item contacts__items">
                     <a href="mailto:info@devstudio.com" class="header__link">
-                        <svg class="header__icon" width="16px" height="16px">
+                        <svg class="header__icon" ">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         <span class="header__text"> info@devstudio.com</span>
@@ -51,15 +51,16 @@
                 </li>
                 <li class="header__item contacts__items">
                     <a href="tel:+380961111111" class="header__link">
-                        <svg class="header__icon" width="10px" height="16px">
+                        <svg class="header__icon" ">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         <span class="header__text"> +38 096 111 11 11</span>
                     </a>
                 </li>
             </ul>
+    
         </div>
-
+    
     </header>
 
     <!--главный контент-->
@@ -154,7 +155,7 @@
                 <h2 class="teem__title">Наша команда</h2>
                 <ul class="teem__list">
                     <li class="teem__items">
-                        <img src="./images/igordemjanenko.jpg" alt="Igor Dejanenko" width="270" class="foto">
+                        <img src="./images/igordemjanenko.jpg" alt="Igor Dejanenko"  class="teem__foto">
                         <h3 class="teem__name-title">Игорь Демьяненко</h3>
                         <p class="teem__text">Product Designer</p>
                         <ul class="social-networks">
@@ -197,7 +198,7 @@
                         </ul>
                     </li>
                     <li class="teem__items">
-                        <img src="./images/olgarepina.jpg" alt="Olga Repina" width="270" class="foto">
+                        <img src="./images/olgarepina.jpg" alt="Olga Repina"  class="teem__foto">
                         <h3 class="teem__name-title">Ольга Репина</h3>
                         <p class="teem__text">Frontend Developer</p>
                         <ul class="social-networks">
@@ -240,7 +241,7 @@
                         </ul>
                     </li>
                     <li class="teem__items">
-                        <img src="./images/nikolajtarasov.jpg" alt="Nikolaj Tarasov" width="270" class="foto">
+                        <img src="./images/nikolajtarasov.jpg" alt="Nikolaj Tarasov"  class="teem__foto">
                         <h3 class="teem__name-title">Николай Тарасов</h3>
                         <p class="teem__text">Marketing</p>
                         <ul class="social-networks">
@@ -282,7 +283,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="teem__items"> <img src="./images/mihailermakov.jpg" alt="Mihail Ermakov" width="270" class="foto">
+                    <li class="teem__items"> <img src="./images/mihailermakov.jpg" alt="Mihail Ermakov"  class="teem__foto">
                         <h3 class="teem__name-title">Михаил Ермаков</h3>
                         <p class="teem__text">UI Designer</p>
                         <ul class="social-networks">
@@ -382,61 +383,64 @@
     <!--подвал-->
     <footer class="footer">
         <div class="container footer__container">
-            <div>
-        
-                <a href="#" class="logo footer__logo"> <span> Web</span>Studio</a>
-        
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__items"><a
-                                href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z"
-                                target="_blank" class="address__link address__link--white">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="address__items"><a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a></li>
-                        <li class="address__items"><a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a></li>
+            <div class="thumb">
+                <div>
+                
+                    <a href="#" class="logo footer__logo"> <span> Web</span>Studio</a>
+                
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__items"><a
+                                    href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z"
+                                    target="_blank" class="address__link address__link--white">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="address__items"><a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+                            </li>
+                            <li class="address__items"><a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                
+                <div class="footer__conect">
+                    <h2 class="footer__title">присоединяйтесь</h2>
+                    <ul class="social-networks footer__social-networks">
+                        <li class="social-networks__items">
+                
+                            <a href="#" aria-label="instagram" class="social-networks__link social-networks__link--inverse">
+                                <svg class="social-networks__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                
+                        </li>
+                        <li class="social-networks__items">
+                
+                            <a href="#" aria-label="twitter" class="social-networks__link social-networks__link--inverse">
+                                <svg class="social-networks__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                
+                        </li>
+                        <li class="social-networks__items">
+                
+                            <a href="#" aria-label="facebook" class="social-networks__link social-networks__link--inverse">
+                                <svg class="social-networks__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                
+                        </li>
+                        <li class="social-networks__items">
+                
+                            <a href="#" aria-label="linkedin" class="social-networks__link social-networks__link--inverse">
+                                <svg class="social-networks__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                
+                        </li>
                     </ul>
-                </address>
-            </div>
-        
-            <div class="footer__conect">
-                <h2 class="footer__title">присоединяйтесь</h2>
-                <ul class="social-networks footer__social-networks">
-                    <li class="social-networks__items">
-        
-                        <a href="#" aria-label="instagram" class="social-networks__link social-networks__link--inverse">
-                            <svg class="social-networks__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-        
-                    </li>
-                    <li class="social-networks__items">
-        
-                        <a href="#" aria-label="twitter" class="social-networks__link social-networks__link--inverse">
-                            <svg class="social-networks__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-        
-                    </li>
-                    <li class="social-networks__items">
-        
-                        <a href="#" aria-label="facebook" class="social-networks__link social-networks__link--inverse">
-                            <svg class="social-networks__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-        
-                    </li>
-                    <li class="social-networks__items">
-        
-                        <a href="#" aria-label="linkedin" class="social-networks__link social-networks__link--inverse">
-                            <svg class="social-networks__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-        
-                    </li>
-                </ul>
+                </div>
             </div>
             <!-- форма в футере -->
             <form name="subscribe-form" class="footer__subscribe">

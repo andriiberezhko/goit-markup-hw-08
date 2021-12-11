@@ -22,8 +22,8 @@
   top: 50%;
   left: 50%;
 
-  height: 581px;
-  width: 528px;
+  height: 609px;
+  width: 450px;
 
   background-color: $backgroundColorMain;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -33,6 +33,11 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $time $timeFunction, opacity $time $timeFunction;
+
+  @media (min-width: 1199px) {
+    height: 581px;
+    width: 528px;
+  }
 }
 // кнопка закрытия
 .modal__close {
@@ -68,6 +73,7 @@
   padding: 40px;
 }
 .modal__title {
+  text-align: center;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
@@ -134,18 +140,26 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 24px;
+  // text-align: center;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
+  @media (min-width: 1199px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .modal__link {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
 
   color: #2196f3;
+  @media (min-width: 1199px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .modal__icon-check {
   display: inline-block;

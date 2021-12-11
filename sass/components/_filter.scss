@@ -6,11 +6,24 @@
 }
 .filtr__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-bottom: 40px;
+  @media (min-width: 767px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  // justify-content: center;
 }
-.filtr__items:not(:first-child) {
+.filtr__items {
+  margin-top: 8px;
   margin-left: 8px;
+  margin-bottom: 8px;
 }
+// .filtr__items:not(:first-child) {
+//   margin-left: 8px;
+// }
 
 .filtr__button {
   cursor: pointer;
