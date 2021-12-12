@@ -16,16 +16,19 @@
   @media (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
   }
   @media (min-width: 1199px) {
     flex-wrap: nowrap;
     flex-basis: calc(100% / 4 - 30px);
   }
-  @media (max-width: 767px) {
-    &:not(:first-child) {
-      margin-top: 30px;
-    }
-  }
+  // @media (max-width: 768px) {
+  //   &:not(:first-child) {
+  //     margin-top: 30px;
+  //   }
+  // }
 }
 .qualities__title {
   margin-top: 30px;
@@ -34,7 +37,7 @@
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     text-align: center;
   }
 }
