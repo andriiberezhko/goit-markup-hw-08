@@ -6,13 +6,16 @@
 .header__container {
   display: flex;
   align-items: center;
-
-  @media (min-width: 768px) {
-    justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 %list {
-  // margin-left: 93px;
   display: flex;
 
   font-style: normal;
@@ -20,20 +23,9 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
 }
 %item {
   position: relative;
-
-  // @media (min-width: 1199px) {
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-  //   // &:not(:first-child) {
-  //   //   margin-left: 50px;
-  //   // }
-  // }
 }
 %link {
   display: flex;
@@ -57,6 +49,10 @@
 .nav {
   align-items: center;
   display: flex;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .nav__list {
@@ -71,10 +67,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  // @media (min-width: 768px) and (max-width: 1199px) {
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-  // }
+
   @media (min-width: 1200px) {
     margin-left: 93px;
   }
@@ -109,7 +102,6 @@
 
 /* контакты в шапке */
 .header__contacts {
-  // margin-left: auto;
   display: flex;
 
   font-style: normal;
@@ -117,9 +109,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+
   @media (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
     padding-top: 21px;
@@ -130,10 +120,6 @@
   @media (min-width: 1200px) {
     margin-left: auto;
   }
-  // @media (min-width: 768px) and (max-width: 1199px) {
-  //   padding-top: 21px;
-  //   padding-bottom: 21px;
-  // }
 }
 .header__icon {
   margin-right: 10px;
@@ -161,5 +147,28 @@
     &:not(:first-child) {
       margin-top: 10px;
     }
+  }
+}
+.menu__button {
+  display: block;
+  margin: 10px -5px 0 auto;
+  padding: 0;
+  // border: none;
+  background-color: transparent;
+  & .menu__close {
+    display: none;
+  }
+  &.is-open .menu__close {
+    display: block;
+  }
+  &.is-open .menu__open {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+  &:hover .menu__icon,
+  &:focus .menu__icon {
+    fill: $linkNavHover;
   }
 }
