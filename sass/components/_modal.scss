@@ -8,6 +8,10 @@
   opacity: 1;
 
   transition: opacity $time $timeFunction;
+  overflow-y: scroll;
+  @media (max-width: 450px) {
+    padding: 93px 15px;
+  }
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -18,12 +22,12 @@
   opacity: 0;
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  // top: 50%;
+  // left: 50%;
 
-  height: 609px;
-  width: 95%;
+  // height: 100%;
+  width: 100%;
 
   background-color: $backgroundColorMain;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -31,16 +35,31 @@
   border-radius: 4px;
 
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform $time $timeFunction, opacity $time $timeFunction;
+  transform: scale(1);
+  transition: opacity $time $timeFunction;
 
   @media (min-width: 1199px) {
     height: 581px;
     width: 528px;
   }
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     height: 609px;
     width: 450px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  @media (min-width: 450px) {
+    height: 609px;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $time $timeFunction, opacity $time $timeFunction;
+  }
+  @media (max-width: 796px) and (orientation: landscape) {
+    transform: translate(-50%, -20%);
   }
 }
 // кнопка закрытия
