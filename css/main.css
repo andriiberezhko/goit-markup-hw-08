@@ -1493,10 +1493,6 @@ body {
   padding-bottom: 0;
 }
 
-.section.progect {
-  padding-top: 0;
-}
-
 .filtr__list {
   display: -webkit-box;
   display: -ms-flexbox;
