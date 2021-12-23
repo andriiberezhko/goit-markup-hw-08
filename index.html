@@ -25,7 +25,7 @@
         <div class="container header__container">
             <a href="#" class="logo "> <span>Web</span>Studio</a>
     
-            <div class="header__menu" data-menu>
+            <div class="header__menu is-hidden" data-menu>
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -46,7 +46,7 @@
                             <svg class="header__icon" ">
                                                 <use href=" ./images/icons.svg#icon-mail"></use>
                             </svg>
-                            <span class="header__text"> info@devstudio.com</span>
+                            <span class="header__text mail"> info@devstudio.com</span>
                         </a>
                     </li>
                     <li class="header__item contacts__items">
@@ -54,16 +54,36 @@
                             <svg class="header__icon" ">
                                                 <use href=" ./images/icons.svg#icon-smartphone"></use>
                             </svg>
-                            <span class="header__text"> +38 096 111 11 11</span>
+                            <span class="header__text tel"> +38 096 111 11 11</span>
                         </a>
                     </li>
                 </ul>
+
+                <ul class="header__social">
+                    <li class="social__items">
+                        <a href="#" class="social__link">Instagram</a>
+                    </li>
+                    <li class="social__items">
+                        <a href="#" class="social__link">Twitter</a>
+                    </li>
+                    <li class="social__items">
+                        <a href="#" class="social__link">Facebook</a>
+                    </li>
+                    <li class="social__items">
+                        <a href="#" class="social__link">LinkedIn</a>
+                    </li>
+                </ul>
+                <button type="button" class="menu__button menu__close" data-menu-close>
+                    <svg class="menu__icon" width='40px' height='40px' aria-label="Переключатель мобильного меню">
+                        <use href=" ./images/icons.svg#icon-close" class="menu__close"></use>
+                    </svg>
+                </button>
     
             </div>
-            <button type="button" class="menu__button" data-menu-button>
+            <button type="button" class="menu__button" data-menu-open>
                 <svg class="menu__icon" width= '40px' height= '40px' aria-label="Переключатель мобильного меню">
                     <use href=" ./images/icons.svg#icon-menu" class="menu__open"></use>
-                    <use href=" ./images/icons.svg#icon-close" class="menu__close"></use>
+                    
                 </svg>
             </button>
     

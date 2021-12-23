@@ -38,10 +38,6 @@
   transform: scale(1);
   transition: opacity $time $timeFunction;
 
-  @media (min-width: 1199px) {
-    height: 581px;
-    width: 528px;
-  }
   @media (min-width: 768px) {
     position: absolute;
     top: 50%;
@@ -60,6 +56,10 @@
   }
   @media (max-width: 796px) and (orientation: landscape) {
     transform: translate(-50%, -20%);
+  }
+  @media (min-width: 1199px) {
+    height: 581px;
+    width: 528px;
   }
 }
 // кнопка закрытия
