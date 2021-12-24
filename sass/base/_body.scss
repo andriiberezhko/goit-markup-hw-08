@@ -2,4 +2,10 @@ body {
   background: $backgroundColorMain;
   //   color: var(--text-heder-color);
   font-family: Roboto, sans-serif;
+  &.menu-open {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    // overflow: hidden;
+  }
 }

@@ -54,7 +54,7 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform $time $timeFunction, opacity $time $timeFunction;
   }
-  @media (max-width: 796px) and (orientation: landscape) {
+  @media (orientation: landscape) {
     transform: translate(-50%, -20%);
   }
   @media (min-width: 1199px) {
