@@ -8,7 +8,7 @@
   opacity: 1;
 
   transition: opacity $time $timeFunction;
-  overflow-y: scroll;
+
   @media (max-width: 450px) {
     padding: 93px 15px;
   }
@@ -16,6 +16,9 @@
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  // @media (max-width: 767px) {
+  //   overflow-y: scroll;
+  // }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
@@ -38,14 +41,6 @@
   transform: scale(1);
   transition: opacity $time $timeFunction;
 
-  @media (min-width: 768px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 609px;
-    width: 450px;
-    transform: translate(-50%, -50%) scale(1);
-  }
   @media (min-width: 450px) {
     height: 609px;
     width: 450px;
@@ -54,9 +49,17 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform $time $timeFunction, opacity $time $timeFunction;
   }
-  @media (orientation: landscape) {
-    transform: translate(-50%, -20%);
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 609px;
+    width: 450px;
+    transform: translate(-50%, -50%) scale(1);
   }
+  // @media (orientation: landscape) {
+  //   transform: translate(-50%, -20%);
+  // }
   @media (min-width: 1199px) {
     height: 581px;
     width: 528px;
