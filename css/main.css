@@ -822,9 +822,6 @@ body.menu-open {
         flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
-  .qualities__items:not(:first-child) {
-    margin-top: 30px;
-  }
 }
 
 @media (min-width: 1199px) {
@@ -833,6 +830,12 @@ body.menu-open {
         flex-wrap: nowrap;
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+@media (max-width: 767px) {
+  .qualities__items:not(:first-child) {
+    margin-top: 30px;
   }
 }
 
